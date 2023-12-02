@@ -8,7 +8,7 @@ const Navbar = () => {
         <Image className="mb-2" src='/puffy.png' width={40} height={51.12} alt='Webhooks' />
         <span className="hidden md:flex" >Webhook Notify</span>
       </div>
-        <ronin-button label="Connect" />
+        <ronin-button />
     </div>
   );
 };
