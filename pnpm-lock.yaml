@@ -15,8 +15,8 @@ dependencies:
     specifier: ^1.0.2
     version: 1.0.2(@types/react@18.2.41)(react@18.2.0)
   '@roninbuilders/modal':
-    specifier: ^0.0.21
-    version: 0.0.21(@types/react@18.2.41)(react@18.2.0)(typescript@5.3.2)(vanilla-cafe@0.1.5)
+    specifier: ^0.0.22
+    version: 0.0.22(@types/react@18.2.41)(react@18.2.0)(typescript@5.3.2)(vanilla-cafe@0.1.5)
   '@w3vm/react':
     specifier: ^0.0.7
     version: 0.0.7(@types/react@18.2.41)(@w3vm/core@0.0.4)(react@18.2.0)(typescript@5.3.2)
@@ -852,8 +852,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@roninbuilders/modal@0.0.21(@types/react@18.2.41)(react@18.2.0)(typescript@5.3.2)(vanilla-cafe@0.1.5):
-    resolution: {integrity: sha512-5NbkxdMPHhay64RBuzAd6IH2AIiZTvaAnasJXuE2+M2XTvxEE3G3Umn8j1rMORR7ZI8w978CXC4Rq8+VEwomzQ==}
+  /@roninbuilders/modal@0.0.22(@types/react@18.2.41)(react@18.2.0)(typescript@5.3.2)(vanilla-cafe@0.1.5):
+    resolution: {integrity: sha512-gk/14/jLC2yDiBCtgbkCvlnkUtY0Lh5f4HhwDPbnDUaQ9YwCSXaIsysHsFg8W7uizu8fOkWWUYe19/5UH6LQ8g==}
     peerDependencies:
       typescript: '>=5'
       vanilla-cafe: '>=0'
