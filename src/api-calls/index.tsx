@@ -3,7 +3,7 @@ const BASE_URL = 'https://notify.axie.tools'
 /* Store */
 import { createStore } from 'react-cafe'
 
-export const { set, states, snap } = createStore<MyStore>({
+export const { set, states, snap, sub } = createStore<MyStore>({
   data: undefined,
   error: undefined
 })
@@ -20,20 +20,22 @@ function useWebhook() {
   const createWebhook = useCallback(async(payload: Payload)=>{
     setIsLoading(true)
     try {
-      const response = await (await fetch(`${BASE_URL}/create`, {
+      const res = await fetch(`${BASE_URL}/create`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(payload)
-      })).json()
+      })
+      if(!res.ok) return set.error({error: res.statusText})
+
+      const response = await res.json()
 
       set.data(response)
     } catch (er){
       set.error(er as WebhookError)
-    } finally {
-      setIsLoading(false)
     }
+    setIsLoading(false)
   }, [])
 
   return {
