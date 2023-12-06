@@ -15,8 +15,8 @@ dependencies:
     specifier: ^1.0.2
     version: 1.0.2(@types/react@18.2.41)(react@18.2.0)
   '@roninbuilders/modal':
-    specifier: ^0.0.22
-    version: 0.0.22(@types/react@18.2.41)(react@18.2.0)(typescript@5.3.2)(vanilla-cafe@0.1.5)
+    specifier: ^0.0.25
+    version: 0.0.25(@types/react@18.2.41)(react@18.2.0)(typescript@5.3.2)(vanilla-cafe@0.1.5)
   '@w3vm/react':
     specifier: ^0.0.7
     version: 0.0.7(@types/react@18.2.41)(@w3vm/core@0.0.4)(react@18.2.0)(typescript@5.3.2)
@@ -852,8 +852,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@roninbuilders/modal@0.0.22(@types/react@18.2.41)(react@18.2.0)(typescript@5.3.2)(vanilla-cafe@0.1.5):
-    resolution: {integrity: sha512-gk/14/jLC2yDiBCtgbkCvlnkUtY0Lh5f4HhwDPbnDUaQ9YwCSXaIsysHsFg8W7uizu8fOkWWUYe19/5UH6LQ8g==}
+  /@roninbuilders/modal-ui@0.0.3(typescript@5.3.2)(vanilla-cafe@0.1.5):
+    resolution: {integrity: sha512-7ZNgROGXf8q4thE0ri8F63W8dEFNRxuHP2zea+oKKGCBpVSAcntRJuwDymRCS4bQtRdfQTx1J8hpJVNzc/hknQ==}
     peerDependencies:
       typescript: '>=5'
       vanilla-cafe: '>=0'
@@ -861,6 +861,23 @@ packages:
       typescript:
         optional: true
     dependencies:
+      blo: 1.1.1
+      lit: 2.8.0
+      qrcode: 1.5.3
+      typescript: 5.3.2
+      vanilla-cafe: 0.1.5(typescript@5.3.2)
+    dev: false
+
+  /@roninbuilders/modal@0.0.25(@types/react@18.2.41)(react@18.2.0)(typescript@5.3.2)(vanilla-cafe@0.1.5):
+    resolution: {integrity: sha512-TqxfS5M2DGRIHqavAJ5fBoggJ9Ki57K6FQ8Hw/Q8CKvNcPZHCRMd3GfwrJ5iw1lSI3sXO2XmWxk6Sbx2dzRwAg==}
+    peerDependencies:
+      typescript: '>=5'
+      vanilla-cafe: '>=0'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@roninbuilders/modal-ui': 0.0.3(typescript@5.3.2)(vanilla-cafe@0.1.5)
       '@w3vm/core': 0.0.4(typescript@5.3.2)
       '@w3vm/walletconnect': 0.0.7(@types/react@18.2.41)(@w3vm/core@0.0.4)(react@18.2.0)(typescript@5.3.2)(vanilla-cafe@0.1.5)
       '@wehmoen/rnsts': 1.0.1
@@ -1772,6 +1789,11 @@ packages:
   /binary-extensions@2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
+
+  /blo@1.1.1:
+    resolution: {integrity: sha512-1uGZInlRD4X1WQP2G1QjDGwGZ8HdGgFKqnzyRdA2TYYc0MOQCmCi37RTQ8oJuI0UF6DYFKXHwV/t1kZkO/fTaA==}
+    engines: {node: '>=16'}
+    dev: false
 
   /brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
